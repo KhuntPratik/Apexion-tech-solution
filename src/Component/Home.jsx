@@ -89,7 +89,7 @@ function Home() {
                 }}
             >
                 <div className="container">
-                    <h1 className="display-2 fw-bold text-white mb-3 fade-in-up">Apexion Tech Solution</h1>
+                    <h1 className="display-2 fw-bold text-white mb-3 fade-in-up">Apexion Web Solution</h1>
                     <p className="lead text-white mb-4 fs-3 fade-in-up delay-1">
                         Transforming ideas into digital excellence.<br />Your trusted partner in innovative web solutions.
                     </p>
@@ -105,16 +105,16 @@ function Home() {
                 <div className="col-md-6 mb-4 mb-md-0">
                   <h2 className="fw-bold mb-3">Who We Are</h2>
                   <p style={{fontSize: '1.1rem'}}>
-                    <strong>Apexion Tech Solution</strong> is a forward-thinking technology company dedicated to empowering businesses through innovative digital solutions. Founded by a team of passionate tech enthusiasts, we have grown into a trusted partner for organizations seeking to transform their digital presence and drive sustainable growth.
+                    <strong>Apexion Web Solution</strong> is a forward-thinking technology company dedicated to empowering businesses through innovative digital solutions. Founded by a team of passionate tech enthusiasts, we have grown into a trusted partner for organizations seeking to transform their digital presence and drive sustainable growth.
                   </p>
                   <p style={{fontSize: '1.1rem'}}>
-                    Our expertise spans web and mobile development, digital marketing, and IT consulting. We pride ourselves on our client-centric approach, commitment to quality, and relentless pursuit of excellence. At Apexion, we believe in building long-term relationships and delivering solutions that make a real difference.
+                    Our expertise spans web and mobile development, digital marketing, and IT consulting. We pride ourselves on our client-centric approach, commitment to quality, and relentless pursuit of excellence. At AN Infoway, we believe in building long-term relationships and delivering solutions that make a real difference.
                   </p>
                 </div>
                 <div className="col-md-6 text-center">
                   <img
-                    src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
-                    alt="Apexion Tech Solution Team"
+                    src="/Images/hero-image.jpeg"
+                    alt="Apexion Web Solution Team"
                     className="img-fluid rounded shadow"
                     style={{maxHeight: '320px', objectFit: 'cover'}}
                   />
@@ -155,7 +155,7 @@ function Home() {
                         </div>
                         <div className="col-md-4">
                             <div className="card h-100 shadow-sm service-card">
-                                <img src="/Images/service3.jpeg" alt="Digital Marketing" className="card-img-top service-img" style={{height: '180px', objectFit: 'cover'}} />
+                                <img src="/Images/hero-image.jpeg" alt="Digital Marketing" className="card-img-top service-img" style={{height: '180px', objectFit: 'cover'}} />
                                 <div className="card-body text-center">
                                     <i className="fas fa-chart-line fa-3x mb-3 text-primary"></i>
                                     <h3 className="card-title h5">Digital Marketing</h3>

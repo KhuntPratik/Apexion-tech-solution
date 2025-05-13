@@ -1,26 +1,27 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import './App.css'
-import Layout from './pages/Layout'
-import Home from "./Component/Home";
-import About from "./Component/About";
-import Contact from "./Component/Contact";
+import './App.css'
+import Navbar from './Component/Navbar'
+import Hero from './Component/Hero'
+import About from './Component/About'
+import Services from './Component/Services'
+import Projects from './Component/Projects'
+import Testimonials from './Component/Testimonials'
+import Contact from './Component/Contact'
+import Footer from './Component/Footer'
 
 function App() {
-
-
   return (
-    <>
-        <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-    </>
+    <div className="app">
+      <Navbar />
+      <main>
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        {/* <Testimonials /> */}
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   )
 }
 
