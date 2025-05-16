@@ -1,6 +1,13 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Projects = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const projects = [
     {
       id: 1,
@@ -49,14 +56,14 @@ const Projects = () => {
   return (
     <section className="py-5 bg-white" id="projects">
       <div className="container">
-        <div className="text-center mb-5">
+        <div className="text-center mb-5" data-aos="fade-down">
           <h2 className="fw-bold">Our Projects</h2>
           <p className="text-muted">Explore our latest work and success stories</p>
         </div>
 
         <div className="row g-4">
           {projects.map(project => (
-            <div className="col-md-6 col-lg-4" key={project.id}>
+            <div className="col-md-6 col-lg-4" key={project.id} data-aos="fade-up">
               <div className="card border-0 shadow-sm h-100">
                 <div className="position-relative overflow-hidden" style={{ aspectRatio: '16/9' }}>
                   <img

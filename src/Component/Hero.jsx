@@ -1,11 +1,22 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   return (
-    <section className="py-5 bg-light" id="home" style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
+    <section
+      className="py-5 bg-light"
+      id="home"
+      style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}
+    >
       <div className="container py-5">
         <div className="row align-items-center">
           {/* Text Content */}
-          <div className="col-lg-6 mb-4 mb-lg-0">
+          <div className="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
             <h1 className="display-5 fw-bold text-dark mb-4">
               Your Trusted Partner for IT Solutions & Services
             </h1>
@@ -33,7 +44,7 @@ const Hero = () => {
           </div>
 
           {/* Image Content */}
-          <div className="col-lg-6 text-center">
+          <div className="col-lg-6 text-center" data-aos="fade-left">
             <img
               src="/Images/hero-image.jpeg"
               alt="IT Solutions"
@@ -47,4 +58,3 @@ const Hero = () => {
 };
 
 export default Hero;
-

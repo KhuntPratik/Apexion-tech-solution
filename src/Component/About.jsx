@@ -1,4 +1,12 @@
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const features = [
     {
       icon: '🎯',
@@ -22,7 +30,7 @@ const About = () => {
       <div className="container py-5">
         <div className="row align-items-center g-5">
           {/* Content */}
-          <div className="col-lg-6">
+          <div className="col-lg-6" data-aos="fade-right">
             <div className="mb-4">
               <h2 className="fw-bold">About Us</h2>
               <p className="text-muted">Your trusted partner in digital transformation</p>
@@ -41,7 +49,12 @@ const About = () => {
             {/* Features */}
             <div className="row">
               {features.map((feature, index) => (
-                <div className="col-md-4 mb-4" key={index}>
+                <div
+                  className="col-md-4 mb-4"
+                  key={index}
+                  data-aos="zoom-in"
+                  data-aos-delay={index * 100}
+                >
                   <div className="p-3 bg-white rounded shadow-sm h-100 text-center">
                     <div className="fs-2 mb-2">{feature.icon}</div>
                     <h5 className="fw-semibold">{feature.title}</h5>
@@ -53,7 +66,7 @@ const About = () => {
           </div>
 
           {/* Image with Badge */}
-          <div className="col-lg-6 position-relative text-center">
+          <div className="col-lg-6 position-relative text-center" data-aos="fade-left">
             <img
               src="/Images/hero-image.jpeg"
               alt="About Apexion Web Solution"
@@ -69,7 +82,7 @@ const About = () => {
               }}
             >
               <span className="fs-3 fw-bold">10+</span>
-              <span className="small">Years of Experience</span>
+              <span className="lrge">Years of Experience</span>
             </div>
           </div>
         </div>
