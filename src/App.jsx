@@ -9,12 +9,12 @@ import Footer from './Component/Footer'
 
 function App() {
   return (
-    <div className="app">
+    <div className='container-fluid'>
       <Navbar />
       <main>
         <Hero />
-        <About />
         <Services />
+        <About />
         <Projects />
         {/* <Testimonials /> */}
         <Contact />

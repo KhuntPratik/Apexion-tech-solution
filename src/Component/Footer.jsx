@@ -9,7 +9,7 @@ const Footer = () => {
 
           {/* Company Info */}
           <div className="col-md-4 mb-4">
-            <h4 className="text-uppercase mb-3">Apexion Web Solution</h4>
+            <h4 className="text-uppercase mb-3">Apexion Tech Solution</h4>
             <p>
               Your trusted partner for IT solutions and services. We help businesses
               grow and succeed in the digital world.
@@ -72,7 +72,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="text-center pt-3 border-top border-light mt-4">
-          <p className="mb-0">&copy; {new Date().getFullYear()} Apexion Web Solution. All rights reserved.</p>
+          <p className="mb-0">&copy; {new Date().getFullYear()} Apexion Tech Solution. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,46 +9,48 @@ const Hero = () => {
 
   return (
     <section
-      className="py-5 bg-light"
+      className="bg-white position-relative overflow-hidden"
       id="home"
       style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}
     >
       <div className="container py-5">
         <div className="row align-items-center">
           {/* Text Content */}
-          <div className="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
-            <h1 className="display-5 fw-bold text-dark mb-4">
-              Your Trusted Partner for IT Solutions & Services
+          <div className="col-lg-6" data-aos="fade-right">
+            <span className="badge bg-primary text-uppercase mb-3 px-3 py-2 fs-6 rounded-pill">
+              Welcome to Apexion
+            </span>
+            <h1 className="display-3 fw-bold text-dark mb-4">
+              Transforming Ideas into <span className="text-primary">Digital Success</span>
             </h1>
             <p className="lead text-secondary mb-4">
-              We provide cutting-edge technology solutions to help businesses grow and succeed in the digital world.
+              We craft innovative IT solutions to streamline your operations, amplify your reach, and accelerate your growth.
             </p>
-            <div className="d-flex gap-3 mb-4">
-              <button className="btn btn-primary btn-lg">Get Started</button>
-              <button className="btn btn-outline-primary btn-lg">Learn More</button>
-            </div>
-            <div className="row text-center">
-              <div className="col-4">
-                <h3 className="text-primary fw-bold">500+</h3>
-                <p className="text-muted mb-0">Projects Completed</p>
-              </div>
-              <div className="col-4">
-                <h3 className="text-primary fw-bold">300+</h3>
-                <p className="text-muted mb-0">Happy Clients</p>
-              </div>
-              <div className="col-4">
-                <h3 className="text-primary fw-bold">10+</h3>
-                <p className="text-muted mb-0">Years Experience</p>
-              </div>
+            <div className="d-flex gap-3">
+              <button className="btn btn-primary btn-lg px-4 shadow-sm">Get Started</button>
+              <button className="btn btn-outline-primary btn-lg px-4">Learn More</button>
             </div>
           </div>
 
           {/* Image Content */}
-          <div className="col-lg-6 text-center" data-aos="fade-left">
+          <div className="col-lg-6 position-relative text-center mt-5 mt-lg-0" data-aos="zoom-in">
+            <div
+              className="position-absolute bg-primary rounded-circle"
+              style={{
+                width: '400px',
+                height: '400px',
+                top: '50%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                opacity: 0.1,
+                zIndex: 0,
+              }}
+            ></div>
             <img
               src="/Images/hero-image.jpeg"
               alt="IT Solutions"
-              className="img-fluid rounded shadow"
+              className="img-fluid position-relative rounded-4 shadow-lg"
+              style={{ zIndex: 1, maxHeight: '450px', objectFit: 'cover' }}
             />
           </div>
         </div>
