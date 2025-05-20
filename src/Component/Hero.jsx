@@ -13,10 +13,10 @@ const Hero = () => {
       id="home"
       style={{ minHeight: '100vh', display: 'flex', alignItems: 'center' }}
     >
-      <div className="container py-5">
+      <div className="container-fluid py-5">
         <div className="row align-items-center">
           {/* Text Content */}
-          <div className="col-lg-6" data-aos="fade-right">
+          <div className="container-fluid col-lg-6" data-aos="fade-right">
             <span className="badge bg-primary text-uppercase mb-3 px-3 py-2 fs-6 rounded-pill">
               Welcome to Apexion
             </span>
