@@ -133,9 +133,9 @@ const Contact = () => {
                   <div
                     className="icon-container rounded-4 d-flex align-items-center justify-content-center"
                     style={{
-                      width: '60px',
-                      height: '60px',
-                      fontSize: '1.5rem',
+                      width: '36px',
+                      height: '36px',
+                      fontSize: '1.1rem',
                       background: item.gradient,
                       transition: 'all 0.3s ease'
                     }}
@@ -218,17 +218,18 @@ const Contact = () => {
 
               <button 
                 type="submit" 
-                className="btn btn-lg w-100 submit-btn"
+                className="btn w-100 submit-btn"
                 style={{
                   background: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
                   border: 'none',
-                  borderRadius: '12px',
-                  padding: '1rem',
+                  borderRadius: '8px',
+                  padding: '0.65rem 1rem',
+                  fontSize: '0.95rem',
                   color: '#fff',
                   fontWeight: '600',
                   transition: 'all 0.3s ease',
                   textTransform: 'uppercase',
-                  letterSpacing: '1px'
+                  letterSpacing: '0.5px'
                 }}
                 onMouseEnter={(e) => {
                   e.target.style.transform = 'translateY(-2px)';

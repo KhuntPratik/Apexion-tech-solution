@@ -25,31 +25,32 @@ const Footer = () => {
   ];
 
   const contactInfo = [
-    { 
-      icon: 'fas fa-map-marker-alt', 
-      text: 'Rajkot, Gujarat, India - 3604005', 
-      gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
-      iconSize: '1.2rem'
-    },
-    { 
-      icon: 'fas fa-phone-alt', 
-      text: '+91 8780777688', 
-      gradient: 'linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)',
-      iconSize: '1.2rem'
-    },
-    { 
-      icon: 'fas fa-envelope', 
-      text: 'apexiontechsolutions@gmail.com', 
-      gradient: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)',
-      iconSize: '1.2rem'
-    },
-    { 
-      icon: 'far fa-clock', 
-      text: 'Mon - Sat: 8.00 am - 7.00 pm', 
-      gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
-      iconSize: '1.2rem'
-    }
-  ];
+  { 
+    icon: 'fas fa-map-marker-alt', 
+    text: 'Rajkot, Gujarat, India - 3604005', 
+    gradient: 'linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%)',
+    iconSize: '1.2rem'
+  },
+  { 
+  icon: 'fas fa-phone', 
+  text: '+91 8780777688', 
+  gradient: 'linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%)',
+  iconSize: '1.2rem'
+  },
+  { 
+    icon: 'fas fa-envelope', 
+    text: 'apexiontechsolutions@gmail.com', 
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #ef4444 100%)',
+    iconSize: '1.2rem'
+  },
+  { 
+    icon: 'fas fa-clock', 
+    text: 'Mon - Sat: 8.00 am - 7.00 pm', 
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)',
+    iconSize: '1.2rem'
+  }
+];
+
 
   return (
     <footer 
@@ -108,8 +109,8 @@ const Footer = () => {
                   href={social.url} 
                   className="social-icon"
                   style={{
-                    width: '40px',
-                    height: '40px',
+                    width: '50px',
+                    height: '50px',
                     borderRadius: '12px',
                     background: social.gradient,
                     display: 'flex',
@@ -206,8 +207,8 @@ const Footer = () => {
                   <div
                     className="icon-container me-3"
                     style={{
-                      width: '40px',
-                      height: '40px',
+                      width: '50px',
+                      height: '50px',
                       borderRadius: '12px',
                       background: info.gradient,
                       display: 'flex',
