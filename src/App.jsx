@@ -9,7 +9,7 @@ import Footer from './Component/Footer'
 
 function App() {
   return (
-    <div className='container-fluid'>
+    <div className='container-fluid p-0'>
       <Navbar />
       <main>
         <Hero />
